@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TNAP Shop - Grief Support Products</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+
+        :root {
+            --primary-color: #A569BD;
+            --secondary-color: #4F4F4F;
+            --text-color: #8E44AD;
+            --accent-color: #D4A017;
+            --hover-bg: #6C4B8E;
+            --dropdown-bg: #5A5A5A;
+        }
+
+        body {
+            font-family: 'Nunito', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: var(--text-color);
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: var(--secondary-color);
+            padding: 10px 40px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav .logo img {
+            width: 140px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+            align-items: center;
+        }
+
+        nav ul li {
+            position: relative;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 12px 15px;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: var(--hover-bg);
+            border-radius: 4px;
+        }
+
+        nav .donate-btn {
+            background-color: var(--accent-color);
+            color: #ffffff;
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        nav .donate-btn:hover {
+            background-color: #B8860B;
+        }
+
+        .shop-container {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .shop-container h1 {
+            color: var(--primary-color);
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .product-item {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-item img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .product-item h3 {
+            margin: 15px 0 10px;
+        }
+
+        .product-item p {
+            color: #555555;
+        }
+
+        .product-item button {
+            background-color: var(--accent-color);
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .product-item button:hover {
+            background-color: #B8860B;
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TNAP Shop</h1>
+        <p>Find resources, gifts, and tools to support grieving children, teens, and families.</p>
+    </header>
+
+    <nav>
+        <div class="logo">
+            <img src="/mnt/data/TNAP__logotransparentbackground-1-e1698326833736-1024x752.webp" alt="TNAP Logo">
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <a href="#donate" class="donate-btn">Donate</a>
+    </nav>
+
+    <section class="shop-container">
+        <h1>Our Products</h1>
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="/mnt/data/630f77_5c31a1a6530f417baaed51f9abde01e1mv2.webp" alt="Product 1">
+                <h3>Grief Support Guide</h3>
+                <p>A comprehensive guide to support grieving children and teens.</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="/mnt/data/630f77_47ef21166ef34fb0865dade774f0055bmv2-e1698329040141.webp" alt="Product 2">
+                <h3>Comfort Gift Box</h3>
+                <p>Thoughtfully curated items to provide comfort and care.</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="/mnt/data/630f77_4132f22eee3b49708f01b84fa148d440mv2.webp" alt="Product 3">
+                <h3>Conversation Cards</h3>
+                <p>Helpful prompts to guide meaningful conversations around grief.</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <a href="#privacy">Privacy Policy</a>
+        <a href="#safeguarding">Safeguarding Policy</a>
+        <a href="#terms">Terms of Use</a>
+        <p>&copy; 2025 TNAP - Compassionate Grief Support. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
