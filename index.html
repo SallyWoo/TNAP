@@ -181,12 +181,64 @@
             color: #555555;
         }
 
+        .button-group {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 40px 0;
+        }
+
+        .button-group a {
+            background-color: var(--accent-color);
+            color: #ffffff;
+            padding: 12px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+
+        .button-group a:hover {
+            background-color: #B8860B;
+        }
+
+        .testimonials {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 40px 20px;
+            background-color: #f9f9f9;
+        }
+
+        .testimonial {
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
         footer {
             background-color: var(--primary-color);
             color: #ffffff;
             text-align: center;
-            padding: 15px 0;
-            margin-top: 20px;
+            padding: 20px 0;
+        }
+
+        footer a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .social-media {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px 0;
         }
     </style>
 </head>
@@ -202,71 +254,86 @@
         </div>
         <ul>
             <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Us</a>
-                <ul>
-                    <li><a href="#core-team">Core Team</a></li>
-                    <li><a href="#ambassadors">Our Ambassadors</a></li>
-                    <li><a href="#youth-ambassadors">Youth Ambassadors</a></li>
-                </ul>
-            </li>
-            <li><a href="#support">Support Services</a>
-                <ul>
-                    <li><a href="#children">Children</a></li>
-                    <li><a href="#young-people">Young People</a></li>
-                    <li><a href="#adults">Adults</a></li>
-                    <li><a href="#schools">Schools</a></li>
-                    <li><a href="#pet-loss">Pet Loss</a></li>
-                    <li><a href="#pre-bereavement">Pre Bre</a></li>
-                    <li><a href="#corporate">Corporate</a></li>
-                </ul>
-            </li>
-            <li><a href="#get-involved">Get Involved</a>
-                <ul>
-                    <li><a href="#volunteering">Volunteering</a></li>
-                    <li><a href="#fundraising">Fundraising</a></li>
-                    <li><a href="#corp-sponsorship">Corp Sponsorship</a></li>
-                    <li><a href="#individual-giving">Individual Giving</a></li>
-                </ul>
-            </li>
-            <li><a href="#resources">Resources</a></li>
-            <li><a href="#thank-you">Thank You Page</a></li>
-            <li><a href="#events">Events</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#campaign">Current Campaign</a></li>
+            <li><a href="#statistics">Key Statistics</a></li>
             <li><a href="#shop">Shop</a></li>
+            <li><a href="#contact">Contact Us</a></li>
         </ul>
         <a href="#donate" class="donate-btn">Donate</a>
     </nav>
 
-    <section class="hero">
-        <div>
-            <h1>Compassionate Support for Grieving Young Hearts</h1>
-            <a href="#shop" class="cta">Explore Our Resources</a>
-        </div>
+    <section class="content" id="intro">
+        <h2>Welcome to TNAP</h2>
+        <p>Your trusted partner in compassionate grief support for children, teens, and families.</p>
     </section>
 
-    <section class="content">
-        <h2>Our Services</h2>
-        <p>We offer a range of training, guides, and resources designed to support children, teens, parents, carers, and educators through the grieving process.</p>
+    <section class="content" id="mission-vision">
+        <h2>Our Mission & Vision</h2>
+        <p>We aim to provide unparalleled support to those dealing with grief, creating a community of hope and resilience.</p>
+    </section>
+
+    <section class="content" id="campaign">
+        <h2>Current Campaign: Wellingborough Music Festival</h2>
+        <p>Join us at the Wellingborough Music Festival and our Christmas Tree Campaign to support grieving children and families.</p>
+    </section>
+
+    <section class="content" id="statistics">
+        <h2>Why We Do What We Do</h2>
+        <p>We receive 50 new referrals a month. A child loses a parent every 30 minutes. These numbers highlight the critical need for our work.</p>
+    </section>
+
+    <div class="button-group">
+        <a href="#donate">Donate</a>
+        <a href="#referral">Referral Form</a>
+        <a href="#newsletter">Sign Up for Newsletter</a>
+        <a href="#contact">Contact Us</a>
+    </div>
+
+    <section class="testimonials">
+        <div class="testimonial">
+            <h3>Parent Testimonial</h3>
+            <p>"TNAP has been a beacon of hope for our family during a challenging time."</p>
+        </div>
+        <div class="testimonial">
+            <h3>Teacher Testimonial</h3>
+            <p>"The support and resources provided by TNAP have been invaluable to our school community."</p>
+        </div>
+        <div class="testimonial">
+            <h3>Child Testimonial</h3>
+            <p>"TNAP helped me understand and cope with my feelings after losing my parent."</p>
+        </div>
     </section>
 
     <section class="products">
         <div class="product">
-            <img src="/mnt/data/630f77_5c31a1a6530f417baaed51f9abde01e1mv2.webp" alt="Upside Down Training">
-            <h3>Upside Down Training</h3>
-            <p>Empowering primary schools to support children with grief.</p>
+            <img src="/mnt/data/630f77_5c31a1a6530f417baaed51f9abde01e1mv2.webp" alt="Product 1">
+            <h3>Product 1</h3>
+            <p>Description of product 1.</p>
         </div>
         <div class="product">
-            <img src="/mnt/data/630f77_47ef21166ef34fb0865dade774f0055bmv2-e1698329040141.webp" alt="Grief Cards">
-            <h3>Grief Cards</h3>
-            <p>Thoughtfully designed cards to help express feelings and support.</p>
+            <img src="/mnt/data/630f77_47ef21166ef34fb0865dade774f0055bmv2-e1698329040141.webp" alt="Product 2">
+            <h3>Product 2</h3>
+            <p>Description of product 2.</p>
         </div>
         <div class="product">
-            <img src="/mnt/data/630f77_4132f22eee3b49708f01b84fa148d440mv2.webp" alt="Comfort Gifts">
-            <h3>Comfort Gifts</h3>
-            <p>Specially curated gifts to offer comfort and support.</p>
+            <img src="/mnt/data/630f77_4132f22eee3b49708f01b84fa148d440mv2.webp" alt="Product 3">
+            <h3>Product 3</h3>
+            <p>Description of product 3.</p>
         </div>
     </section>
 
     <footer>
+        <div class="social-media">
+            <a href="#">Facebook</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">Instagram</a>
+        </div>
+        <div>
+            <a href="#privacy">Privacy Policy</a>
+            <a href="#safeguarding">Safeguarding Policy</a>
+            <a href="#terms">Terms of Use</a>
+        </div>
         <p>&copy; 2025 TNAP - Compassionate Grief Support. All Rights Reserved.</p>
     </footer>
 </body>
